@@ -29,4 +29,16 @@ class HomeController extends Controller
     public function show_em(){
         return view('employee');
     }
+    public function adminlist()
+    {
+        return view('admin');
+    }
+    public function attendance_r()
+    {
+        return view('attendance');
+    }
+    public function leave_r()
+    {
+        return view('leave');
+    }
 }
