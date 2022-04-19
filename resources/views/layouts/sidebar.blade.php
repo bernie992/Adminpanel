@@ -16,7 +16,7 @@
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Dashboard
                             </a>
-                            <a class="nav-link" href="index.html">
+                            <a class="nav-link" href="{{ url('/admin')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-tachometer-alt"></i></div>
                                 Admin List
                             </a>
@@ -25,11 +25,11 @@
                                 Employee List
                             </a>
                             <!-- <div class="sb-sidenav-menu-heading">Addons</div> -->
-                            <a class="nav-link" href="charts.html">
+                            <a class="nav-link" href="{{url('/attendance')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-chart-area"></i></div>
                                 Attendance Report
                             </a>
-                            <a class="nav-link" href="tables.html">
+                            <a class="nav-link" href="{{url('/leave')}}">
                                 <div class="sb-nav-link-icon"><i class="fas fa-table"></i></div>
                                 Leave Report
                             </a>
@@ -37,7 +37,7 @@
                     </div>
                     <div class="sb-sidenav-footer">
                         <div class="small">Logged in as:</div>
-                        Start Bootstrap
+                        {{ Auth::user()->name }}
                     </div>
                 </nav>
             </div>

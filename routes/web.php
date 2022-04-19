@@ -26,3 +26,6 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
 
 Route::get('/employee', [App\Http\Controllers\HomeController::class, 'show_em'])->name('employee');
+Route::get('/admin', [App\Http\Controllers\HomeController::class, 'adminlist'])->name('admin');
+Route::get('/attendance', [App\Http\Controllers\HomeController::class, 'attendance_r'])->name('attendance');
+Route::get('/leave', [App\Http\Controllers\HomeController::class, 'leave_r'])->name('leave');
