@@ -6,7 +6,7 @@
 <div id="layoutSidenav_content">
                 <main>
                     <div class="container-fluid px-4">
-                        <h3 class="mt-4">Data Record</h3>
+                        <h3 class="mt-4">Leave Record</h3>
                         
                         <div class="card mb-4">
                             <div class="card-header">
