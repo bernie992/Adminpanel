@@ -12,6 +12,10 @@
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/dataTables.bootstrap5.min.js"></script>
+    <script src="https://cdn.datatables.net/select/1.3.4/js/dataTables.select.min.js"></script>
 
     <!-- Fonts -->
     <link rel="dns-prefetch" href="//fonts.gstatic.com">
@@ -21,13 +25,17 @@
    
     <link href="{{ asset('css/style.css') }}" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/simple-datatables@latest/dist/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/dataTables.bootstrap5.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/select/1.3.4/css/select.bootstrap5.min.css">
+    
 </head>
 <body class="sb-nav-fixed">
     <div id="app">
         <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
             <div class="container">
             <button style="margin-left: -110px;" class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
-                <a style="margin-left: 20px;" class="navbar-brand" href="{{ url('/') }}">
+                <a style="margin-left: 20px;" class="navbar-brand" href="{{ url('/home') }}">
                    Attendance System
                 </a>
              
@@ -88,5 +96,6 @@
         </main>
     </div>
     <script src="js/scripts.js"></script>
+    
 </body>
 </html>
